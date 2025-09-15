@@ -19,7 +19,7 @@ function App() {
   
   if (view === 'home') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 p-4">
+      <div className="min-h-screen bg-gray-50 p-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
@@ -43,23 +43,23 @@ function App() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-green-50 p-4 rounded-lg">
-                <div className="text-2xl font-bold text-green-600">{completedSurveys}</div>
+              <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg">
+                <div className="text-2xl font-bold text-gray-900">{completedSurveys}</div>
                 <div className="text-sm text-gray-600">Responses Collected</div>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <div className="text-2xl font-bold text-blue-600">€100</div>
+              <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg">
+                <div className="text-2xl font-bold text-gray-900">€100</div>
                 <div className="text-sm text-gray-600">Prize Draw</div>
               </div>
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <div className="text-2xl font-bold text-purple-600">10 min</div>
+              <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg">
+                <div className="text-2xl font-bold text-gray-900">10 min</div>
                 <div className="text-sm text-gray-600">Survey Length</div>
               </div>
             </div>
             
             <button
               onClick={() => setView('survey')}
-              className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 text-lg font-semibold mb-4"
+              className="bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 text-lg font-semibold mb-4"
             >
               📝 Take the Survey - Enter €100 Draw
             </button>
@@ -70,27 +70,27 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">📞 Book a 1-on-1 Interview</h3>
+            <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">📞 Book a 1-on-1 Interview</h3>
               <p className="text-gray-600 mb-4">
                 Want to share more detailed insights? Book a confidential phone call with Tracy Keogh.
               </p>
               <button 
                 onClick={() => window.open('mailto:tracykeogh0@gmail.com?subject=Burren Lowlands Interview Request', '_blank')}
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+                className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800"
               >
                 Schedule Interview
               </button>
             </div>
             
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-semibold mb-4 text-purple-600">🏛️ View Live Results</h3>
+            <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">🏛️ View Live Results</h3>
               <p className="text-gray-600 mb-4">
                 See how responses are evolving in real-time. Transparent, community-driven research.
               </p>
               <button
                 onClick={() => setView('results')}
-                className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700"
+                className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800"
               >
                 View Dashboard
               </button>
@@ -101,7 +101,7 @@ function App() {
             <h2 className="text-2xl font-bold mb-6">About This Research</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-semibold mb-3 text-green-600">Our Approach</h3>
+                <h3 className="font-semibold mb-3 text-gray-900">Our Approach</h3>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li>✅ Action research methodology</li>
                   <li>✅ Community-participatory design</li>
@@ -110,7 +110,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-3 text-blue-600">Target Areas</h3>
+                <h3 className="font-semibold mb-3 text-gray-900">Target Areas</h3>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li>🏘️ Gort, Kinvara, Loughrea</li>
                   <li>🏘️ Ennistymon, Lisdoonvarna</li>
@@ -120,9 +120,9 @@ function App() {
               </div>
             </div>
             
-            <div className="mt-6 p-4 bg-green-50 rounded-lg">
-              <p className="text-green-800 font-medium">💡 Our Promise</p>
-              <p className="text-green-700 text-sm mt-1">We exist to solve problems and will proceed until solutions are found. This research directly informs economic development strategy.</p>
+            <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+              <p className="text-gray-900 font-medium">💡 Our Promise</p>
+              <p className="text-gray-700 text-sm mt-1">We exist to solve problems and will proceed until solutions are found. This research directly informs economic development strategy.</p>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@ function App() {
               <div className="text-center">
                 <button
                   onClick={handleSubmit}
-                  className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 text-lg font-semibold"
+                  className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 text-lg font-semibold"
                 >
                   Submit Survey & Enter €100 Draw
                 </button>
@@ -356,7 +356,7 @@ function App() {
 
   if (view === 'thankyou') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 p-4">
+      <div className="min-h-screen bg-gray-50 p-4">
         <div className="max-w-2xl mx-auto text-center py-16">
           <div className="bg-white rounded-lg shadow-xl p-8">
             <div className="text-6xl mb-6">🎉</div>
@@ -367,9 +367,9 @@ function App() {
               Your insights are invaluable to shaping the future of business in the Burren Lowlands.
             </p>
             
-            <div className="bg-green-50 p-6 rounded-lg mb-6">
-              <h3 className="font-semibold text-green-800 mb-2">✅ You're entered in the €100 prize draw!</h3>
-              <p className="text-green-700 text-sm">Winner will be announced March 31st, 2024</p>
+            <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg mb-6">
+              <h3 className="font-semibold text-gray-900 mb-2">✅ You're entered in the €100 prize draw!</h3>
+              <p className="text-gray-700 text-sm">Winner will be announced March 31st, 2024</p>
             </div>
 
             <div className="space-y-4">
@@ -386,13 +386,13 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
                 <button
                   onClick={() => setView('results')}
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+                  className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800"
                 >
                   View Live Results
                 </button>
                 <button
                   onClick={() => window.open('mailto:tracykeogh0@gmail.com?subject=Burren Lowlands Follow-up', '_blank')}
-                  className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700"
+                  className="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-600"
                 >
                   Book Interview
                 </button>
@@ -427,20 +427,20 @@ function App() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-              <div className="bg-green-50 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-green-600">{completedSurveys}</div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-gray-900">{completedSurveys}</div>
                 <div className="text-sm text-gray-600">Survey Responses</div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-blue-600">23</div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-gray-900">23</div>
                 <div className="text-sm text-gray-600">Interviews Booked</div>
               </div>
-              <div className="bg-purple-50 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-purple-600">6</div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-gray-900">6</div>
                 <div className="text-sm text-gray-600">Workshops Planned</div>
               </div>
-              <div className="bg-yellow-50 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-yellow-600">€100</div>
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+                <div className="text-2xl font-bold text-gray-900">€100</div>
                 <div className="text-sm text-gray-600">Prize Draw</div>
               </div>
             </div>
@@ -450,17 +450,17 @@ function App() {
                 <h3 className="text-lg font-semibold mb-4">Business Status Distribution</h3>
                 <div className="space-y-3">
                   {[
-                    { label: 'Current business owners', count: 48, width: '40%', color: 'bg-green-500' },
-                    { label: 'Former business owners', count: 31, width: '25%', color: 'bg-red-500' },
-                    { label: 'Aspiring entrepreneurs', count: 28, width: '22%', color: 'bg-blue-500' },
-                    { label: 'Community leaders', count: 12, width: '10%', color: 'bg-purple-500' },
-                    { label: 'Interested residents', count: 8, width: '6%', color: 'bg-gray-500' }
+                    { label: 'Current business owners', count: 48, width: '40%' },
+                    { label: 'Former business owners', count: 31, width: '25%' },
+                    { label: 'Aspiring entrepreneurs', count: 28, width: '22%' },
+                    { label: 'Community leaders', count: 12, width: '10%' },
+                    { label: 'Interested residents', count: 8, width: '6%' }
                   ].map(item => (
                     <div key={item.label} className="flex items-center space-x-3">
                       <div className="w-32 text-sm">{item.label}</div>
                       <div className="flex-1 bg-gray-200 rounded-full h-3">
                         <div 
-                          className={`${item.color} h-3 rounded-full`}
+                          className="bg-gray-700 h-3 rounded-full"
                           style={{ width: item.width }}
                         />
                       </div>
@@ -485,7 +485,7 @@ function App() {
                       <div className="w-24 text-sm">{item.area}</div>
                       <div className="flex-1 bg-gray-200 rounded-full h-3">
                         <div 
-                          className="bg-blue-600 h-3 rounded-full" 
+                          className="bg-gray-700 h-3 rounded-full" 
                           style={{ width: item.width }}
                         />
                       </div>
@@ -528,19 +528,19 @@ function App() {
               <h3 className="text-lg font-semibold mb-4">Business Types in Region</h3>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {[
-                  { type: 'Tourism', count: 42, color: 'bg-blue-500' },
-                  { type: 'Agriculture', count: 38, color: 'bg-green-500' },
-                  { type: 'Retail', count: 31, color: 'bg-purple-500' },
-                  { type: 'Food/Restaurant', count: 28, color: 'bg-orange-500' },
-                  { type: 'Professional Services', count: 24, color: 'bg-indigo-500' },
-                  { type: 'Arts/Crafts', count: 19, color: 'bg-pink-500' },
-                  { type: 'Technology', count: 15, color: 'bg-cyan-500' },
-                  { type: 'Construction', count: 12, color: 'bg-gray-500' },
-                  { type: 'Community Enterprise', count: 8, color: 'bg-yellow-500' },
-                  { type: 'Other', count: 6, color: 'bg-red-500' }
+                  { type: 'Tourism', count: 42 },
+                  { type: 'Agriculture', count: 38 },
+                  { type: 'Retail', count: 31 },
+                  { type: 'Food/Restaurant', count: 28 },
+                  { type: 'Professional Services', count: 24 },
+                  { type: 'Arts/Crafts', count: 19 },
+                  { type: 'Technology', count: 15 },
+                  { type: 'Construction', count: 12 },
+                  { type: 'Community Enterprise', count: 8 },
+                  { type: 'Other', count: 6 }
                 ].map(item => (
                   <div key={item.type} className="text-center">
-                    <div className={`${item.color} text-white rounded-lg p-3 mb-2`}>
+                    <div className="bg-gray-700 text-white rounded-lg p-3 mb-2">
                       <div className="text-lg font-bold">{item.count}</div>
                     </div>
                     <div className="text-xs text-gray-600">{item.type}</div>
@@ -549,8 +549,8 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibent mb-4">🎯 Action Research Process</h3>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-4">🎯 Action Research Process</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="text-3xl mb-2">📊</div>
@@ -572,13 +572,13 @@ function App() {
               <div className="mt-6 text-center">
                 <button
                   onClick={() => setView('survey')}
-                  className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 mr-4"
+                  className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 mr-4"
                 >
                   Add Your Voice
                 </button>
                 <button
                   onClick={() => window.open('mailto:tracykeogh0@gmail.com?subject=Burren Lowlands Research Inquiry', '_blank')}
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
+                  className="bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-600"
                 >
                   Contact Researcher
                 </button>
